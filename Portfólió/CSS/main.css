@@ -1,0 +1,146 @@
+/*layout*/
+
+body
+{
+display: grid;
+	grid-template-areas: 
+	"fejlec"
+	"navigacio"
+	"kontent"
+	"lablec";
+grid-template-rows: max-content max-content 1fr max-content;
+min-height:100vh;
+}
+
+header
+{
+grid-area: fejlec;
+}
+
+nav
+{
+grid-area: navigacio;
+}
+
+main
+{
+grid-area: kontent;
+}
+
+footer
+{
+grid-area:lablec;
+}
+
+/*szinek, bekeretezések...*/
+
+body
+{
+	background-color: antiquewhite;
+	color:#381b01;
+	font-size: 18px;
+	margin: 0px;
+}
+header
+{
+
+	background-color:#ffc691;
+	border: 20px 20px 0px 20px solid #ffc691;
+}
+
+nav
+{
+	background-color: white;
+}
+
+main
+{
+	background-color: floralwhite;
+	border: 3px solid salmon;
+	margin: 30px; 
+	padding: 10px;
+	border-radius: 40px;
+}
+
+footer
+{
+	font-size: 12 px;
+	margin: 0px 20px;
+}
+
+/*osztályok*/
+
+.flex
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex_egyenletesen
+{
+	justify-content: space-around;
+}
+
+
+.gomb
+{
+	text-align: center;
+	font-size: 1rem;
+	color: brown;
+	background-color: lightsalmon;
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	margin: .35rem .2rem;
+	border-radius: 0.5rem;
+	min-width: max-content;
+
+}
+
+.gomb:hover
+{
+	cursor: pointer;
+	border: 2px solid salmon;
+}
+
+.flex_nyulik
+{
+	flex-grow: 1;
+	text-align: right;
+}
+
+.gomb_jobbra
+{
+	float: right;
+}
+.halo
+{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-gap: 2rem;
+	margin: 1rem 5%;
+}
+
+.kartya
+{
+		display: block;
+		padding: 1rem;
+}
+
+/*egyéb*/
+
+img
+{
+	max-width: 100%;
+}
+
+a
+{
+	text-decoration: none;
+	color:#5e2d00;
+}
+
+a:hover
+{
+	cursor :pointer;
+	color :#b06723;
+}
